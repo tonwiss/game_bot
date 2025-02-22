@@ -65,7 +65,7 @@ async def bak_game(
         await update_bak(update.effective_user.id, record)
 
 
-async def check(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def check_bak(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.effective_message.text == 'Меню':
         return await start(update, context)
     elif update.effective_message.text == 'Играть снова':

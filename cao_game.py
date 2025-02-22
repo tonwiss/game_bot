@@ -119,7 +119,7 @@ async def cao_game(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["queue"] = queue
 
 
-async def check(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def check_cao(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.effective_message.text == "Меню":
         return await start(update, context)
     elif update.effective_message.text == "Играть снова":
